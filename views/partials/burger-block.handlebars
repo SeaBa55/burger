@@ -1,14 +1,9 @@
-{{!-- {{#each allburgers}}
-    {{#unless sleepy}}
-      {{> burger-block sleep=true}}
-    {{/unless}}
-  {{/each}} --}}
 <li>
-	{{burger_name}}
+	<h5>{{burger_name}}</h5>
 
-	<button class="change-sleep" data-id="{{id}}" data-newsleep="{{avail}}">
+	<button class="change-state" data-id="{{id}}" data-state="{{avail}}">
 		{{#if avail}}Devour me!{{else}}Eat again!{{/if}}
 	</button>
 
-	<button class="delete-cat" data-id="{{this.id}}">DELETE!</button>
+	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
 </li>

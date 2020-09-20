@@ -50,5 +50,7 @@ burger_v1.1 - Created a basic working burger app that allows the user to add a b
 
 burger_v1.2 - Added delete button functionality for each burger that enables the user to remove each burger from burgers_db. App was built using class example, and needs to be refactored to incorporate better styling, remove reduntant or unused code, and clean-up confusing parameter names that may remain for the previous application.
 
+burger_v1.3 - Added functionallity to add new burger to burgers_db if the user decides to eat a burger again. This ensures the burgers that have been devoured serve as a record of all burgers eaten (unless user deletes a burger from the devoured section). 
+
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
