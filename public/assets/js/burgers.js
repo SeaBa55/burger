@@ -4,6 +4,7 @@ $(function() {
   $(".change-state").on("click", function(event) {
 
     let id = $(this).data("id");
+    
     let state = $(this).data("state");
 
     if(state == false){
@@ -15,7 +16,7 @@ $(function() {
         
       };
 
-      var url = "/api/cats";
+      var url = "/api/burgers";
 
       var request = {
 
@@ -32,7 +33,7 @@ $(function() {
   
       };
 
-      var url = "/api/cats/" + id;
+      var url = "/api/burgers/" + id;
 
       var request = {
 
@@ -67,7 +68,7 @@ $(function() {
     };
 
     // Send the POST request.
-    $.ajax("/api/cats", {
+    $.ajax("/api/burgers", {
 
       type: "POST",
       data: newBurger
@@ -87,13 +88,12 @@ $(function() {
     let id = $(this).data("id");
 
     // Send the DELETE request.
-    $.ajax("/api/cats/" + id, {
+    $.ajax("/api/burgers/" + id, {
 
       type: "DELETE"
 
     }).then(function() {
 
-      console.log("deleted cat", id);
       // Reload the page to get the updated list
       location.reload();
 

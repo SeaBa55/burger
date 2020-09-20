@@ -52,5 +52,7 @@ burger_v1.2 - Added delete button functionality for each burger that enables the
 
 burger_v1.3 - Added functionallity to add new burger to burgers_db if the user decides to eat a burger again. This ensures the burgers that have been devoured serve as a record of all burgers eaten (unless user deletes a burger from the devoured section). 
 
+burger_v1.3 - Refactored code readability (server.js, connection.js, orm.js, burgers_controller.js, burgers.js, burgers.js).
+
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
