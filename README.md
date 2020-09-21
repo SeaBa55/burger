@@ -54,7 +54,9 @@ burger_v1.3 - Added functionallity to add new burger to burgers_db if the user d
 
 burger_v1.4 - Refactored code readability (server.js, connection.js, orm.js, burgers_controller.js, burgers.js, burgers.js).
 
-burger_v1.5 - Re-styled burgers front end/ user interface: Added logo in jumbotron; Added a fun static background; Added card div containers along with other bootstrap components to "Add Burger", "Burger Queue", and Burger History sections to organize site content and improve the look and feel of the user controls.
+burger_v1.5 - Re-styled burgers front end/ user interface: Added logo in jumbotron; Added a fun static background; Added card div containers along with other bootstrap components to "Add Burger", "Burger Queue", and "Burger History" sections to organize site content and improve the look and feel of the user controls.
+
+burger_v1.6 - Added space between the devour/eat again button and the delete button that appears for each burger in Burger Queue/ History.
 
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
