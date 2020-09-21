@@ -4,14 +4,14 @@ $(function() {
   $(".change-state").on("click", function(event) {
 
     let id = $(this).data("id");
-    
+
     let state = $(this).data("state");
 
     if(state == false){
 
       let newBurger = {
 
-        name: this.previousElementSibling.innerText,
+        name: this.parentElement.previousElementSibling.innerText,
         state: '0'
         
       };

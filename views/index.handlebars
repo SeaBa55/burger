@@ -1,39 +1,150 @@
-<h1>Burgers!</h1>
+<div class="jumbotron jumbotron-fluid" id="jumbo">
 
-<h2>Add a Burger</h2>
-<form class="create-form">
+  <div class="container">
 
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+    <div class="row d-flex justify-content-center"> 
+      
+      <div class="col-lg-6" id="burger-border">
+
+        <h1 class="display-4 d-flex justify-content-center">
+
+          <i class="fas fa-hamburger fa-5x" id="burger-icon"></i>
+        
+        </h1>
+        
+
+        <h1 class="display-4 d-flex justify-content-center" id="title">
+
+          Burgers!
+          
+        </h1>
+
+      </div>
+
+    </div>
+
   </div>
 
-  <div class="form-group">
-    <label for="sleepy">Devour?</label><br>
-    <input type="radio" name="sleepy" value="1" > Devour it Now!
-    <br>
-    <input type="radio" name="sleepy" value="0" checked> Save for later
+</div>
+
+<div class="container d-flex justify-content-center" id="forms-container">
+
+  <div class="card col-lg-6" id="forms-background">
+
+  <div class="row d-flex justify-content-center">
+
+    <div class="col">
+
+      <div class="card" id="add-burger">
+      
+        <div class="card-header d-flex justify-content-center">
+
+          <h2 class="header">Add Burger</h2>
+
+        </div>
+        
+        <div class="card-body d-flex justify-content-center">
+
+          <form class="create-form">
+
+            <div class="form-group">
+
+              <input type="text" id="ca" name="name" placeholder="Enter Burger Name">
+
+            </div>
+
+            <div class="form-group">
+
+              <input type="radio" name="sleepy" value="1" > Devour it Now!
+              <br>
+              <input type="radio" name="sleepy" value="0" checked> Save for later
+
+            </div>
+
+            <button class="btn btn-primary" type="submit">Add Burger</button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 
-  <button type="submit">Add Burger</button>
-</form>
+  <div class="row d-flex justify-content-center">
 
-<h2>Burgers that await you!</h2>
+    <div class="col">
 
-<ul>
-  {{#each allburgers}}
-    {{#unless devoured}}
-      {{> burger-block avail=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+      <div class="card" id="new-burger">
+      
+        <div class="card-header d-flex justify-content-center">
 
-<h2>Burgers you have devoured!</h2>
+          <h2 class="header">Burger Queue</h2>
 
-<ul>
-  {{#each allburgers}}
-    {{#if devoured}}
-      {{> burger-block avail=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+        </div>
+
+        <div class="card-body d-flex justify-content-center">
+
+          <ul class="list-group list-group-flush w-100">
+
+            {{#each allburgers}}
+
+              {{#unless devoured}}
+
+                {{> burger-block avail=true}}
+
+              {{/unless}}
+
+            {{/each}}
+
+          </ul>
+
+        </div>
+      
+      </div>
+    
+    </div>
+  
+  </div>
+
+  <div class="row d-flex justify-content-center">
+
+    <div class="col">
+
+      <div class="card " id="dev-burger">
+      
+        <div class="card-header d-flex justify-content-center">
+
+          <h2 class="header">Burger History                                                       </h2>
+
+        </div>
+
+        <div class="card-body d-flex justify-content-center">
+
+          <ul class="list-group list-group-flush w-100"> 
+
+            {{#each allburgers}}
+
+              {{#if devoured}}
+
+                {{> burger-block avail=false}}
+
+              {{/if}}
+
+            {{/each}}
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+
+</div>
