@@ -26,6 +26,25 @@ Run the app with heroku using the following link:
 If running app locally from terminal you will need to run the following commands to get started:
 > npm i
 
+Create a `.env` file
+```bash
+touch .env
+```
+
+Include the following inside it:
+```env
+# Database host or URL default is localhost
+DB_HOST='localhost'
+# Database user default is root
+DB_USER='root'
+# Database password
+DB_PASSWORD='your_password'
+# Database port default is 3306
+DB_PORT=3306
+# Database Name of the database for the project
+DB_DATABASE_NAME='database_name'
+```
+
 > node server.js
 
 The app will be rendered to: 
