@@ -3,9 +3,13 @@ $(function() {
 
   $(".change-state").on("click", function(event) {
 
-    let id = $(this).data("id");
+    const id = $(this).data("id");
 
-    let state = $(this).data("state");
+    const state = $(this).data("state");
+
+    let url;
+
+    let request;
 
     if(state == false){
 
@@ -16,9 +20,9 @@ $(function() {
         
       };
 
-      var url = "/api/burgers";
+      url = "/api/burgers";
 
-      var request = {
+      request = {
 
         type: "POST",
         data: newBurger
@@ -33,9 +37,9 @@ $(function() {
   
       };
 
-      var url = "/api/burgers/" + id;
+      url = "/api/burgers/" + id;
 
-      var request = {
+      request = {
 
         type: "PUT",
         data: newState
