@@ -5,7 +5,7 @@ Michigan State Bootcamp Homework assignment 13: Node Express Handlebars
 
 This application uses an express backend to create, devour, respawn, and delete a digital burger in mySQL database "burgers_db". The app uses node, express, and express handlebars to render each burger, and interact with the user (client). 
 
-![note_taker](./public/assets/img/Note_Taker.gif)
+![burgers!](./public/assets/img/burgers!.gif)
 
 ## Table of Contents
 
@@ -20,7 +20,8 @@ Revision History
 ## Installation
 
 Run the app with heroku using the following link: 
-> https://salty-dawn-62571.herokuapp.com/
+> https://young-ocean-90529.herokuapp.com/
+
 
 If running app locally from terminal you will need to run the following commands to get started:
 > npm i
@@ -57,6 +58,8 @@ burger_v1.4 - Refactored code readability (server.js, connection.js, orm.js, bur
 burger_v1.5 - Re-styled burgers front end/ user interface: Added logo in jumbotron; Added a fun static background; Added card div containers along with other bootstrap components to "Add Burger", "Burger Queue", and "Burger History" sections to organize site content and improve the look and feel of the user controls.
 
 burger_v1.6 - Added space between the devour/eat again button and the delete button that appears for each burger in Burger Queue/ History.
+
+burger_v1.7 - Edited README.md file, adding app demo gif and deployed heroku link.  
 
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
