@@ -5,7 +5,7 @@ Michigan State Bootcamp Homework assignment 13: Node Express Handlebars
 
 This application uses an express backend to create, devour, respawn, and delete a digital burger in mySQL database "burgers_db". The app uses node, express, and express handlebars to render each burger, and interact with the user (client). 
 
-![burgers!](./public/assets/img/burgers!.gif)
+![burgers!](./public/assets/img/Burgers!.gif)
 
 ## Table of Contents
 
